@@ -13,7 +13,7 @@ variable "cloudflare_domain" {
   description = "Domain in Cloudflare"
 }
 
-variable "gcp_crendentials" {
+variable "gcp_credentials" {
   type        = string
   description = "Either the path to or the contents of a service account key file in JSON format."
 }
