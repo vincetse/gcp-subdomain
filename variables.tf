@@ -13,6 +13,11 @@ variable "cloudflare_domain" {
   description = "Domain in Cloudflare"
 }
 
+variable "gcp_crendentials" {
+  type        = string
+  description = "Either the path to or the contents of a service account key file in JSON format."
+}
+
 variable "gcp_region" {
   type        = string
   description = "Google Cloud region"
