@@ -35,6 +35,10 @@ resource "google_dns_record_set" "test" {
     "127.0.2.2",
     "127.0.3.3",
   ]
+
+  depends_on = [
+    module.subdomain,
+  ]
 }
 
 resource "null_resource" "wait" {
